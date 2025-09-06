@@ -92,7 +92,7 @@ function createSubjectButton(subject) {
     subjectButton.textContent = `${subject} Courses`;
     subjectButton.classList.add('subject-button');
     subjectButton.addEventListener('click', () => {
-        this.createCourses(subject);
+        createCourses(subject);      
     });
     return subjectButton;
 }
@@ -128,8 +128,9 @@ function createCourses(subject) {
 }
 
 function sumCredits(courses){
+    //TODO
     debugger;
-    const credits = courses.reduce( (acc, current) => acc.credits + current.credits );
+    const credits = courses.reduce( (acc, current) => acc + current.credits,0);
     const coursesCount = document.getElementById("courses-count");
     coursesCount.textContent = credits;
 }
