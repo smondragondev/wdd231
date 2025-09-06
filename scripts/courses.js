@@ -128,8 +128,6 @@ function createCourses(subject) {
 }
 
 function sumCredits(courses){
-    //TODO
-    debugger;
     const credits = courses.reduce( (acc, current) => acc + current.credits,0);
     const coursesCount = document.getElementById("courses-count");
     coursesCount.textContent = credits;
