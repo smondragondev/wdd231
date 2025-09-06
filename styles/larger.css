@@ -1,0 +1,62 @@
+@media only screen and (min-width: 38rem) {
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: 48px auto;
+        padding: 5px 0 5px 10px;
+        align-items: center;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 3px;
+    }
+
+
+    nav ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* Main */
+
+    .section-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #student-photo img {
+        width: 200px;
+    }
+
+    #about-me {
+        height: 100%;
+    }
+
+    #web-certificate-courses {
+        grid-column: 1 / -1;
+    }
+
+    #courses-filtered {
+        padding: 2rem 35rem;
+    }
+
+}

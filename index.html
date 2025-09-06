@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development I – Sergio Mondragon</title>
+    <meta name="description" content="Sergio Mondragon's WDD 231 course homepage - Software developer from Ferreñafe, Peru, studying web development at BYU-Pathway Worldwide. Learn about my background and my beautiful city.">
+    <meta name="author" content="Sergio Mondragon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site logo" width="96">
+        <span>Sergio's Site</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current">
+                <a href="#" >Home</a>
+            </li>
+            <li>
+                <a href="#">Chamber Project</a>
+            </li>
+            <li>
+                <a href="#">Final Project</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="section-container">
+            <section class="card" id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hi! My name is Sergio Mondragón and I am a software developer based in Perú.
+                    During my career, I have accumulated 3 years of experience in software development
+                    and ETL processes working with data from different sources and quality.
+                    I am currently studying Software Development at BYU-Pathway Worldwide program and 
+                    I am excited to learn more about web development and improve my English skills.
+                    I'm also a member of The Church of Jesus Christ of Latter-day Saints and my calling is 
+                    Elder's Quorum President in my ward.
+                </p>
+            </section>
+            <section class="card" id="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="My profile image." width="304">            
+                
+            </section>
+            <section class="card" id="web-certificate-courses">
+                <h2>Web Certificates Courses</h2>
+                <div id="courses-panel">
+                    <div id="subjects">
+                    </div>
+                    <p>The total number of credits listed below is <span id="courses-count"></span></p>
+                    <div id="courses-filtered">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://github.com/smondragondev">
+                <img src="images/github-alt-brands-solid.svg" alt="Github profile" width="48">
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-mondragon/">
+                <img src="images/linkedin-brands-solid.svg" alt="LinkedIn profile" width="48">
+            </a>
+            <a href="https://www.instagram.com/sergiomondragonsilva/">
+                <img src="images/instagram-brands-solid.svg" alt="Instagram profile" width="48">
+            </a>
+        </div>
+        <div class="date-info">
+            <p>
+                &copy;<span id="currentYear"></span>  🚀  Sergio Mondragon 🚀  Perú
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
