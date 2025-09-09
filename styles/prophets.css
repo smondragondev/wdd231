@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #070707;
+    --secondary-color: #3E92CC;
+    --accent1-color: #2A628F;
+    --accent2-color: #A88FAC;
+}
+
+
+body{
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+
+header{
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem 0rem;
+}
+
+/* MAIN */
+
+main{
+    padding: 2rem;
+}
+
+#cards{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 10px;
+}
+
+section h2{
+    color: var(--accent1-color);
+}
+
+section img{
+	box-shadow: 0 0 50px var(--accent2-color);
+}
+
+/* Footer */
+
+footer{
+    border-top: 1px solid var(--accent2-color);
+    padding: 2rem;
+    text-align: center;
+}
