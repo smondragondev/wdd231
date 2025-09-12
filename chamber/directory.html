@@ -16,54 +16,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/chamber-logo.webp" alt="Chamber Directory Logo" width="64">
-        <span>Ferreñafe Chamber of Commerce</span>
-        <img src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
-        <button id="ham-btn" class="hamburger" aria-label="Button to expand the navigation menu."></button>
+        <div class="header">
+            <div class="header-grid">
+                <div class="header-content">
+                    <img src="images/chamber-logo.webp" alt="Chamber Directory Logo" width="64">
+                    <span>Ferreñafe Chamber of Commerce</span>
+                    <img class="light-dark" src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
+                    <button id="ham-btn" class="hamburger" aria-label="Button to expand the navigation menu."></button>
+                </div>
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li  class="current"><a href="">Home</a></li>
+                        <li><a href="">Directory</a></li>
+                        <li><a href="">Join</a></li>
+                        <li><a href="">Discover</a></li>
+                    </ul>
+                    <img class="light-dark" src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
+                </nav>
+            </div>            
+        </div>        
     </header>
-     <nav id="nav-bar" class="navigation">
-        <ul>
-            <li  class="current"><a href="">Home</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Discover</a></li>
-        </ul>
-    </nav>
     <main>
    
         <section id="hero-section">
             <picture>
-                <source media="(min-width: 1024px)" srcset="https://placehold.co/1400x700" width="">
-                <img src="https://placehold.co/500x400" alt="Chamber of Commerce working together" width="400">
+                <source media="(min-width: 1024px)" srcset="images/hero-large.webp" width="1200">
+                <img src="images/hero-small.webp" alt="Chamber of Commerce working together" width="400">
             </picture>
             <button>Keynote Tickets</button>
         </section>
-        <section>
-            <h1>Home</h1>
+        <h1>Home</h1>
+        <section id="main-section">
             <article>
-                <h3>Events</h3>
+                <h2>Events</h2>
             </article>
             <article>
-                <h3>Current Weather</h3>
+                <h2>Current Weather</h2>
+                <div id="weather-info">
+                    <img src="images/weather-icon.svg" alt="">
+                    <ul>
+                        <li>75 °F</li>
+                        <li>Party Cloudly</li>
+                        <li>High: 85°</li>
+                        <li>Low: 52°</li>
+                        <li>Humidity: 34%</li>
+                        <li>Sunrise: 7:30am</li>
+                        <li>Sunset: 9:59pm</li>
+                    </ul>
+                </div>
             </article>
-            <article>
-                <h3>Weather Forecast</h3>
+            <article id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Today: <span>90°F</span></li>
+                    <li>Wednesday: <span>89°F</span></li>
+                    <li>Thursday: <span>68°F</span></li>
+                </ul>
             </article>
         </section>
-        <section>
+        <section id="business-section">
             <div class="card">
                 <div class="card-header">
-                    <h3>Business Name</h3>
+                    <h2>Business Name</h2>
                     <p>Business Tag Line</p>
                 </div>
                 <div class="card-content">
-                    <img src="https://placehold.co/100/200" alt="">
+                    <img src="https://placehold.co/120x120" alt="">
                     <ul>
                         <li>
                             <span>EMAIL:</span> info@gmail.com
@@ -76,13 +101,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="card">
+            </div>
+            <div class="card">
                 <div class="card-header">
-                    <h3>Business Name</h3>
+                    <h2>Business Name</h2>
                     <p>Business Tag Line</p>
                 </div>
                 <div class="card-content">
-                    <img src="https://placehold.co/100/200" alt="">
+                    <img src="https://placehold.co/120x120" alt="">
                     <ul>
                         <li>
                             <span>EMAIL:</span> info@gmail.com
@@ -95,13 +121,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="card">
+            </div>
+            <div class="card">
                 <div class="card-header">
-                    <h3>Business Name</h3>
+                    <h2>Business Name</h2>
                     <p>Business Tag Line</p>
                 </div>
                 <div class="card-content">
-                    <img src="https://placehold.co/100/200" alt="">
+                    <img src="https://placehold.co/120x120" alt="">
                     <ul>
                         <li>
                             <span>EMAIL:</span> info@gmail.com
@@ -118,7 +145,8 @@
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer-container">
+            <div id="general-info">
             <h4>Ferreñafe Chamber of Commerce</h4>
             <p>10 Rue De La Paix</p>
             <p>Ferreñafe, Peru 999</p>
@@ -137,11 +165,15 @@
             </a>
         </div>
         <div class="date-info">
+            <p>WDD231 Class Project</p>
+            <p>Sergio Mondragon</p>
             <p>
-                &copy;<span id="currentYear"></span>  🚀  Sergio Mondragon 🚀  Perú
+                &copy;<span id="currentYear"></span>  Ferreñafe Chamber of Commerce
             </p>
             <p id="lastModified"></p>
         </div>
+        </div>
+        
     </footer>
 </body>
 </html>
