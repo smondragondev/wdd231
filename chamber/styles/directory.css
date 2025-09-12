@@ -1,2 +1,152 @@
 /* https://coolors.co/064789-427aa1-ebf2fa-679436-a5be00 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #064789;
+    --secondary-color: #A5BE00;
+    --background-color: #EBF2FA;
+    --text-color: #04164e;
+    --text2-color: #f0f9b4;
+    --accent1-color: #427AA1;
+    --accent2-color: #679436;
+}
+
+body{
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 56px auto 30px 44px;
+    padding: 5px 5px 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: start;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li.current {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+.navigation li.current a {
+    color: var(--text2-color);
+}
+
+
+/* Hamburger navigation */
+
+.hamburger {
+    padding-bottom: 16px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* main */
+
+main {
+   overflow-x: hidden;
+}
+
+#hero-section{
+    position: relative;
+}
+#hero-section img{
+    width: 100%;
+}
+
+#hero-section button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text2-color);
+    border: solid 1px var(--accent1-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#hero-section button:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--accent2-color);
+    color: var(--text-color);
+}
