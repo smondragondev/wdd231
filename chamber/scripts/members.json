@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Sergio Mondragon",
+        "address": "Ferreñafe 123",
+        "phone": "+51 966 777 888",
+        "website": "sergiomondragon.com",
+        "image": "images/sergio-mondragon.webp",
+        "membershipLevel": 3,
+        "companyLine": "Clothes",
+        "email": "sergio@mondragon.com"
+    },
+    {
+        "name": "Ana Perez",
+        "address": "Lima 456",
+        "phone": "+51 977 555 666",
+        "website": "anaperez.com",
+        "image": "images/ana-perez.webp",
+        "membershipLevel": 2,
+        "companyLine": "Food",
+        "email": "ana@perez.com"
+    },
+    {
+        "name": "Carlos Ruiz",
+        "address": "Trujillo 789",
+        "phone": "+51 988 444 555",
+        "website": "carlosruiz.com",
+        "image": "images/carlos-ruiz.webp",
+        "membershipLevel": 1,
+        "companyLine": "Technology",
+        "email": "carlos@ruiz.com"
+    },
+    {
+        "name": "Maria Lopez",
+        "address": "Arequipa 321",
+        "phone": "+51 977 333 444",
+        "website": "marialopez.com",
+        "image": "images/maria-lopez.webp",
+        "membershipLevel": 3,
+        "companyLine": "Health",
+        "email": "maria@lopez.com"
+    },
+    {
+        "name": "Juan Garcia",
+        "address": "Cusco 654",
+        "phone": "+51 966 222 333",
+        "website": "juangarcia.com",
+        "image": "images/juan-garcia.webp",
+        "membershipLevel": 2,
+        "companyLine": "Education",
+        "email": "juan@garcia.com"
+    },
+    {
+        "name": "Luisa Fernandez",
+        "address": "Piura 987",
+        "phone": "+51 988 111 222",
+        "website": "luisafernandez.com",
+        "image": "images/luisa-fernandez.webp",
+        "membershipLevel": 1,
+        "companyLine": "Tourism",
+        "email": "luisa@fernandez.com"
+    },
+    {
+        "name": "Miguel Torres",
+        "address": "Chiclayo 159",
+        "phone": "+51 977 000 111",
+        "website": "migueltorres.com",
+        "image": "images/miguel-torres.webp",
+        "membershipLevel": 3,
+        "companyLine": "Finance",
+        "email": "miguel@torres.com"
+    }
+]
