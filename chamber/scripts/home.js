@@ -1,9 +1,24 @@
 const path = "scripts/members.json";
 const businessSection = document.getElementById("business-section");
+
 async function getMembersData(){
     const response = await fetch(path);
     const data = await response.json();
-    displayMember(data);
+    const filteredMembers = getRandomlyMembers(data);
+    displayMember(filteredMembers);
+}
+
+function getRandomlyMembers(data){
+    // Silver = 2 , Gold = 3
+    const filteredMembers = data.filter( (member) => [2, 3].includes(member.membershipLevel));
+    let randomlyMembers = [];
+    for (let index = 0; index < 3; index++) {
+        const randomIndex = Math.floor(Math.random() * filteredMembers.length);
+        const selectedMember = filteredMembers[randomIndex];
+        randomlyMembers.push(selectedMember);
+        filteredMembers.splice(randomIndex,1);        
+    }
+    return randomlyMembers;
 }
 
 const displayMember = (members) => {
