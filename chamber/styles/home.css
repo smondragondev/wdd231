@@ -1,0 +1,390 @@
+/* https://coolors.co/064789-427aa1-ebf2fa-679436-a5be00 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #064789;
+    --secondary-color: #A5BE00;
+    --background-color: #EBF2FA;
+    --background2-color: #aad67a;
+    --text-color: #04164e;
+    --text2-color: #f0f9b4;
+    --accent1-color: #427AA1;
+    --accent2-color: #679436;
+}
+
+body {
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+/* Header */
+
+header {
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 56px auto 30px 44px;
+    padding: 5px 5px 5px 10px;
+    align-items: center;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: start;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+nav .light-dark {
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li.current {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+.navigation li.current a {
+    color: var(--text2-color);
+}
+
+
+/* Hamburger navigation */
+
+.hamburger {
+    padding-bottom: 12px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* main */
+
+main {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 5px 10px;
+}
+
+#hero-section {
+    position: relative;
+    padding: 0;
+}
+
+#hero-section img {
+    width: 100%;
+}
+
+#hero-section button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text2-color);
+    border: solid 1px var(--accent1-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#hero-section button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--accent2-color);
+    color: var(--text-color);
+}
+
+main h1 {
+    padding-left: 10px;
+}
+
+section ul {
+    list-style: none;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#main-section article {
+    min-height: 200px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#main-section article h2 {
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--text2-color);
+}
+
+#weather-info {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+}
+
+#weather-info ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+
+#weather-forecast ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+#weather-forecast span {
+    font-weight: 700;
+}
+
+.menu-view {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-view {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    width: 100px;
+    color: var(--text2-color);
+    font-size: 1.3rem;
+}
+
+#business-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    min-height: 220px;
+    min-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+    height: 100%;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    height: 100%;
+    padding: 10px 10px;
+    gap: 5px;
+}
+
+.card-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.card-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content ul span {
+    font-weight: 700;
+}
+
+
+.list .card {
+    display: grid;
+    min-height: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.list img {
+    display: none;
+}
+
+.list .card-header {
+    border-bottom: none;
+}
+
+.list .card-header h2 {
+    font-size: 1rem;
+}
+
+.list .card-header p {
+    display: none;
+}
+
+.list .card-content {
+    display: flex;
+}
+
+.list .card-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list .card-content ul li>span {
+    display: none;
+}
+
+.list .card-content ul li:last-child {
+    display: none;
+}
+
+.list .card-content ul li:nth-last-child(2) {
+    display: none;
+}
+
+
+#header-list {
+    display: none;
+}
+
+#header-list.show {
+    display: flex;
+    margin: 10px 10px 0 10px;
+    padding: 10px 20px;
+    justify-content: space-around;
+    background-color: var(--background2-color);
+    color: var(--text-color);
+}
+
+#header-list.show p:last-child {
+    display: none;
+}
+
+#header-list.show p:nth-last-child(2) {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 10px;
+}
+
+#general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+#general-info h4 {
+    font-weight: 900;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
