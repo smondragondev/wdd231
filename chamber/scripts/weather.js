@@ -3,7 +3,6 @@ const longitude = -79.79;
 const apiKey = "9a00efa422d421e10572482c16b77bf3";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 const forecastUrl= `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-console.log(forecastUrl);
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const description = document.querySelector("#description");
@@ -35,7 +34,6 @@ async function fetchWeatherForecast() {
         const response = await fetch(forecastUrl);
         if (response.ok){
             const data = await response.json();
-            console.log(data);
             displayWeatherForecast(data);
         }else{
             throw Error(await response.text());
@@ -64,7 +62,6 @@ function displayWeatherForecast(data){
     const currentTime = new Date(data.list[0].dt * 1000);
     const tomorrowTime = new Date(data.list[0].dt * 1000).setHours(currentTime.getHours()+24);
     const afterTomorrowTime = new Date(data.list[0].dt * 1000).setHours(currentTime.getHours()+48);
-    tomorrowTime.to
     const tomorrowWeekDay = formatToWeekday(tomorrowTime);
     const afterTomorrowWDay = formatToWeekday(afterTomorrowTime);
     const tomorrowForecast = findWeatherForecast(data, tomorrowTime);
