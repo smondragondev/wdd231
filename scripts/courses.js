@@ -78,6 +78,9 @@ const courses = [
     }
 ]
 
+const courseDialog = document.querySelector("#course-details");
+
+
 function createSubjects() {
     const subjectsDiv = document.querySelector("#subjects");
     const subjects = ['All', 'WDD', 'CSE'];
@@ -113,6 +116,9 @@ function createCourseButton(course) {
         courseButton.classList.add('course-completed');
         courseButton.textContent =  `✓ ${course.subject} ${course.number}`;
     }
+    courseButton.addEventListener('click', () => {
+        createCourseDetails(course);
+    });
     return courseButton;
 }
 
@@ -131,6 +137,42 @@ function sumCredits(courses){
     const credits = courses.reduce( (acc, current) => acc + current.credits,0);
     const coursesCount = document.getElementById("courses-count");
     coursesCount.textContent = credits;
+}
+
+function createCourseDetails(course){
+    courseDialog.innerHTML = '';
+    const divHeader = document.createElement("div");
+    const subjectNumber = document.createElement("h2");
+    subjectNumber.textContent = `${course.subject} ${course.number}`;
+    const closeButton = document.createElement("button");
+    divHeader.classList.add("dialog-header");
+    closeButton.textContent = "X";
+    divHeader.appendChild(subjectNumber);
+    divHeader.appendChild(closeButton);
+    courseDialog.appendChild(divHeader);
+
+    const title = document.createElement("h3");
+    title.textContent = course.title;
+    const credits = document.createElement("p");
+    credits.innerHTML = `<strong>Credits:</strong> ${course.credits}`;
+    const certificate = document.createElement("p");
+    certificate.innerHTML = `<strong>Certificate:</strong> ${course.certificate}`;
+    const description = document.createElement("p");
+    description.textContent = course.description;
+    const technologies = document.createElement("p");
+    technologies.innerHTML = `<strong>Technologies:</strong> ${course.technology.join(', ')}`;
+    courseDialog.appendChild(title);
+    courseDialog.appendChild(credits);
+    courseDialog.appendChild(certificate);
+    courseDialog.appendChild(description);
+    courseDialog.appendChild(technologies);
+
+    courseDialog.showModal();
+    
+    closeButton.addEventListener('click', () => {
+        courseDialog.innerHTML = '';
+        courseDialog.close();
+    });
 }
 
 createSubjects();
