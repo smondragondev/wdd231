@@ -149,7 +149,7 @@ dialog{
     margin: auto; */
 }
 
-dialog:open{
+dialog[open]{
     display: flex;
     flex-direction: column;
     gap: 1rem;
