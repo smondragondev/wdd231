@@ -1,0 +1,263 @@
+/* https://coolors.co/064789-427aa1-ebf2fa-679436-a5be00 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #064789;
+    --secondary-color: #A5BE00;
+    --background-color: #EBF2FA;
+    --background2-color: #aad67a;
+    --text-color: #04164e;
+    --text2-color: #f0f9b4;
+    --text3-color: #03294E;
+    --accent1-color: #427AA1;
+    --accent2-color: #679436;
+}
+
+body {
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+/* Header */
+
+header {
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 56px auto 30px 44px;
+    padding: 5px 5px 5px 10px;
+    align-items: center;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: start;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+nav .light-dark {
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li.current {
+    text-decoration: overline;
+    color: var(--text2-color);
+}
+
+.navigation li.current a {
+    color: var(--text2-color);
+}
+
+
+/* Hamburger navigation */
+
+.hamburger {
+    padding-bottom: 12px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* main */
+
+main {
+    overflow-x: hidden;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 10px;
+}
+
+#general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+#general-info h4 {
+    font-weight: 900;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+
+@media only screen and (min-width: 38rem) {
+
+    /* HEADER */
+
+    .header {
+        display: block;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 3px;
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 56px auto 30px 44px;
+        padding: 5px 5px 5px 10px;
+        align-items: center;
+    }
+
+    .header-content .light-dark {
+        display: none;
+    }
+
+    .navigation .light-dark {
+        display: block;
+    }
+
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 350px 48px auto;
+        padding: 10px 10px;
+        gap: 20px;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+        #header-list.show p:last-child {
+        display: block;
+    }
+
+    #header-list.show p:nth-last-child(2) {
+        display: block;
+    }
+
+    .footer-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 0;
+    }
+
+    .social-media {
+        align-items: start;
+        padding: 0;
+    }
+
+    .date-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

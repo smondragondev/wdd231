@@ -1,69 +1,5 @@
 @media only screen and (min-width: 38rem) {
 
-    /* HEADER */
-
-    .header {
-        display: block;
-        max-width: 1300px;
-        margin: 0 auto;
-    }
-
-    .header-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        align-items: center;
-    }
-
-    header img {
-        display: block;
-        width: 100%;
-        height: auto;
-        padding-bottom: 3px;
-    }
-
-    .header-content {
-        display: grid;
-        grid-template-columns: 56px auto 30px 44px;
-        padding: 5px 5px 5px 10px;
-        align-items: center;
-    }
-
-    .header-content .light-dark {
-        display: none;
-    }
-
-    .navigation .light-dark {
-        display: block;
-    }
-
-
-    nav {
-        width: 100%;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .navigation {
-        display: grid;
-        grid-template-columns: 350px 48px auto;
-        padding: 10px 10px;
-        gap: 20px;
-    }
-
-    .navigation ul {
-        flex-direction: row;
-    }
-
-    .navigation a {
-        border: none;
-    }
-
     /* MAIN */
 
     main {
@@ -131,31 +67,6 @@
         display: block;
     }
 
-    #header-list.show p:last-child {
-        display: block;
-    }
 
-    #header-list.show p:nth-last-child(2) {
-        display: block;
-    }
-
-    .footer-container {
-        max-width: 1300px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 20px 0;
-    }
-
-    .social-media {
-        align-items: start;
-        padding: 0;
-    }
-
-    .date-info {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
 
 }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chamber of Commerce Directory</title>
+    <meta name="description" content="Be part of the Chamber Membership in Ferreñafe">
+    <meta name="author" content="Sergio Mondragon">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:description" content="Learn more about the Chamber Directory of Ferreñafe, a website that helps you connect with other companies.">
+    <meta property="og:image" content="https://smondragondev.github.io/wdd231/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://smondragondev.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-grid">
+                <div class="header-content">
+                    <img src="images/chamber-logo.webp" alt="Chamber Directory Logo" width="64">
+                    <span>Ferreñafe Chamber of Commerce</span>
+                    <img class="light-dark" src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
+                    <button id="ham-btn" class="hamburger" aria-label="Button to expand the navigation menu."></button>
+                </div>
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li class="current"><a href="">Join</a></li>
+                        <li><a href="">Discover</a></li>
+                    </ul>
+                    <img class="light-dark" src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
+                </nav>
+            </div>            
+        </div>        
+    </header>
+    <main>   
+        <h1>Join Us</h1>
+        <div class="join-container">
+            <section class="form-section">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get">
+                    <p class="help-message">The fields with <span class="required-symbol">*</span> are required to fill.</p>
+                    <label for="first-name">First Name <span class="required-symbol">*</span>
+                        <input type="text" 
+                        name="first-name" id="first-name" 
+                        autocomplete="given-name" required>
+                    </label>
+                    <label for="last-name">Last Name <span class="required-symbol">*</span>
+                        <input type="text" 
+                        name="last-name" id="last-name" 
+                        autocomplete="family-name" required>
+                    </label>
+                    <label for="organizational-title">Organizational Title
+                        <input type="text" name="organizational-title" 
+                        id="organizational-title" autocomplete="organization-title" 
+                        pattern="[a-zA-Z- ]{7,}">
+                    </label>
+                    <label for="email-address">Email <span class="required-symbol">*</span>
+                        <input type="email" name="email-address" id="email-address"
+                        autocomplete="email" required>
+                    </label>
+                    <label for="mobile-phone-number">Mobile Phone <span class="required-symbol">*</span>
+                        <input type="tel" name="mobile-phone-number"
+                        id="mobile-phone-number" autocomplete="tel" required>
+                    </label>
+                    <label for="organization">Business Name <span class="required-symbol">*</span>
+                        <input type="text" name="organization"
+                        id="organization" autocomplete="organization" required>
+                    </label>
+                    <div class="membership-level-input">
+                        <p>Membership Level</p>
+                        <label for="non-profit">
+                            <input type="radio" name="membership-level" id="non-profit" value="non-profit">
+                            Non profit
+                        </label>
+                        <label for="bronze">
+                            <input type="radio" name="membership-level" id="bronze" value="bronze">
+                            Bronze
+                        </label>
+                        <label for="silver">
+                            <input type="radio" name="membership-level" id="silver" value="silver">
+                            Silver
+                        </label>
+                        <label for="gold">
+                            <input type="radio" name="membership-level" id="gold" value="gold">
+                            Gold
+                        </label>
+                    </div>
+                    <label for="description">
+                        Business Description
+                        <textarea name="description" id="description" cols="40" rows="10"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Join the Chamber">
+                </form>    
+            </section>        
+            <section class="membership-section">
+                <h2>
+                    Membership Leveles
+                </h2>
+                <div class="card non-profit">
+                    <p>Non Profit Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card bronze">
+                    <p>Bronze Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card silver">
+                    <p>Silver Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card gold">
+                    <p>Gold Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <dialog id="np-dialog">
+                    <h3>Non Profit Membership Level</h3>
+                    <div class="description">
+                        <p>For non-profit organizations that want to engage with the Chamber community.</p>
+                        <p><strong>Cost:Free </strong></p>
+                    </div>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to networking opportunities with other non-profit and business members.</li>
+                        <li>Invitations to attend community and Chamber-hosted events.</li>
+                        <li>Basic listing in the Chamber’s online directory.</li>
+                        <li>Access to select training and educational workshops.</li>
+                    </ul>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="bronze-dialog">
+                    <h3>Bronze Membership Level</h3>
+                    <div class="description">
+                        <p>For small businesses or startups seeking visibility and growth support.</p>
+                        <p><strong>Cost: Entry-level fee</strong></p>
+                    </div>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Standard listing in the Chamber’s online directory with business details.</li>
+                        <li>Access to member-only networking events.</li>
+                        <li>Discounts on selected Chamber-hosted events and training.</li>
+                        <li>Quarterly spotlight in Chamber’s newsletter or social media.</li>
+                    </ul>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="silver-dialog">
+                    <h3>Silver Membership Level</h3>
+                    <div class="description">
+                        <p>For growing businesses looking for stronger visibility and promotional support.</p>
+                        <p><strong>Cost: Mid-tier fee</strong></p>
+                    </div>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Enhanced business listing with logo and link on the Chamber’s website.</li>
+                        <li>Priority access to Chamber-hosted workshops and training sessions.</li>
+                        <li>Sponsorship opportunities for events at a discounted rate.</li>
+                        <li>Two spotlight promotions (homepage or newsletter) per year.</li>
+                    </ul>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="gold-dialog">
+                    <h3>Gold Membership Level</h3>
+                    <div class="description">
+                        <p>For established businesses seeking premium visibility and leadership opportunities.</p>
+                        <p><strong>Premium fee</strong></p>
+                    </div>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Premium homepage spotlight position for maximum visibility.</li>
+                        <li>Unlimited event discounts for staff and representatives.</li>
+                        <li>Featured advertising in Chamber newsletters, emails, and social media.</li>
+                        <li>Opportunity to host or co-sponsor Chamber events and training sessions.</li>
+                    </ul>
+                    <button>Close</button>
+                </dialog>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div id="general-info">
+            <h4>Ferreñafe Chamber of Commerce</h4>
+            <p>10 Rue De La Paix</p>
+            <p>Ferreñafe, Peru 999</p>
+            <p>info@ferreñafetucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/smondragondev">
+                <img src="images/github-icon.svg" alt="Github profile" width="48">
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-mondragon/">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn profile" width="48">
+            </a>
+            <a href="https://www.instagram.com/sergiomondragonsilva/">
+                <img src="images/instagram-icon.svg" alt="Instagram profile" width="48">
+            </a>
+        </div>
+        <div class="date-info">
+            <p>WDD231 Class Project</p>
+            <p>Sergio Mondragon</p>
+            <p>
+                &copy;<span id="currentYear"></span>  Ferreñafe Chamber of Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
