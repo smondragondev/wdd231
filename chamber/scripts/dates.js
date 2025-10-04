@@ -8,3 +8,4 @@ currentYearSpan.textContent=currentYear;
 // Last modified
 const lastModified = document.lastModified;
 lastModifiedParagraph.textContent = `Last Modification: ${lastModified}`;
+

@@ -1,0 +1,53 @@
+main {
+    padding: 10px 20px 50px 20px;
+}
+
+
+section {
+    margin: 1rem 8px;
+    border: 1px solid var(--accent2-color);
+    background-color: var(--background2-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "view";
+}
+
+section h2 {
+    color: var(--text3-color);
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+section img {
+    box-shadow: 0 0 50px var(--accent2-color);
+    grid-area: photograph;
+    width: 100%;
+}
+
+section p{
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+section address{
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+section button{
+    grid-area: view;
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--text2-color);
+}

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Chamber of Commerce Directory</title>
-    <meta name="description" content="Chamber directory in Ferreñafe">
+    <title>Discover - Chamber of Commerce</title>
+    <meta name="description" content="Discover more about Chamber Directory in Ferreñafe">
     <meta name="author" content="Sergio Mondragon">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Chamber Directory">
-    <meta property="og:description" content="Learn more about the Chamber Directory of Ferreñafe, a website that helps you connect with other companies.">
+    <meta property="og:description" content="Discover more about the Chamber Directory of Ferreñafe, a website that helps you connect with other companies.">
     <meta property="og:image" content="https://smondragondev.github.io/wdd231/chamber/images/chamber-logo.webp">
     <meta property="og:url" content="https://smondragondev.github.io/wdd231/chamber/directory.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/greet.js" defer></script>
-    <script src="scripts/home.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -36,10 +36,10 @@
                 </div>
                 <nav id="nav-bar" class="navigation">
                     <ul>
-                        <li  class="current"><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
-                        <li><a href="discover.html">Discover</a></li>
+                        <li class="current"><a href="discovery.html">Discover</a></li>
                     </ul>
                     <img class="light-dark" src="images/adjust-icon.svg" alt="Toggle dark/light mode" width="64">
                 </nav>
@@ -47,45 +47,10 @@
         </div>        
     </header>
     <main>   
-        <section id="hero-section">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="images/hero-large.webp" width="1200">
-                <img src="images/hero-small.webp" alt="Chamber of Commerce working together" width="400">
-            </picture>
-            <button>Keynote Tickets</button>
-        </section>
-        <h1>Home</h1>
-        <section id="main-section">
-            <article>
-                <h2>Events</h2>
-            </article>
-            <article>
-                <h2>Current Weather</h2>
-                <div id="weather-info">
-                    <img id="weather-icon" src="images/weather-icon.svg" alt="Weather icon" width="100">
-                    <ul>
-                        <li id="current-temp"></li>
-                        <li id="description"></li>
-                        <li id="high-temp"></li>
-                        <li id="low-temp"></li>
-                        <li id="humidity"></li>
-                        <li id="sunrise"></li>
-                        <li id="sunset"></li>
-                    </ul>
-                </div>
-            </article>
-            <article id="weather-forecast">
-                <h2>Weather Forecast</h2>
-                <ul>
-                    <li id="today-weather">Today: <span>90°F</span></li>
-                    <li id="tomorrow-weather">Wednesday: <span>89°F</span></li>
-                    <li id="day-after-tomorrow-weather">Thursday: <span>68°F</span></li>
-                </ul>
-            </article>
-        </section>
-        <section id="business-section">
-            
-        </section>
+        <h1>Discover</h1>
+        <div id="cards">
+
+        </div>
     </main>
     <footer>
         <div class="footer-container">

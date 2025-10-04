@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sicán National Museum",
+    "address": "Av. Batán Grande cuadra 9 s/n, Carretera Pítipo, Ferreñafe, Lambayeque, Peru",
+    "cost": 8,
+    "description": "Archaeological museum showcasing the Sican culture: funerary masks, metalwork, ceramics and archaeological displays.",
+    "photo_url": "images/places/museo-sican.webp"
+  },
+  {
+    "name": "Bosque de Pómac Historic Sanctuary",
+    "address": "Pitipo District, Ferreñafe Province, Lambayeque, Peru",
+    "cost": 30,
+    "description": "Protected dry-forest area with dozens of Sican pyramids (huacas), wildlife viewing and guided cultural walks.",
+    "photo_url": "images/places/bosque-pomac.webp"
+  },
+  {
+    "name": "Huaca El Loro (in Bosque de Pómac)",
+    "address": "Inside Bosque de Pómac Historic Sanctuary, Ferreñafe, Lambayeque, Peru",
+    "cost": 30,
+    "description": "One of the main archaeological pyramid complexes inside Pómac — excellent for photography and cultural exploration.",
+    "photo_url": "images/places/huaca-el-loro.webp"
+  },
+  {
+    "name": "Laquipampa Wildlife Refuge",
+    "address": "Incahuasi District, Ferreñafe Province, Lambayeque, Peru",
+    "cost": 20,
+    "description": "Dry-forest refuge protecting species such as the white-winged guan; trails, waterfalls and birdwatching opportunities.",
+    "photo_url": "images/places/laquipampa.webp"
+  },
+  {
+    "name": "Túcume (Valley of the Pyramids)",
+    "address": "Túcume District, Lambayeque Region (near Ferreñafe / Chiclayo)",
+    "cost": 10,
+    "description": "Large archaeological complex of many adobe pyramids from Sican/Chimú/Inca cultures — popular archaeological visit nearby.",
+    "photo_url": "images/places/valleys-tucume.webp"
+  },
+  {
+    "name": "Plaza de Armas of Ferreñafe",
+    "address": "Historic Center, Ferreñafe, Lambayeque, Peru",
+    "cost": 0,
+    "description": "Central square with colonial architecture, gardens and local life — free to visit and great for a short walk.",
+    "photo_url": "images/places/plaza-armas.webp"
+  },
+  {
+    "name": "Church of Saint Lucia (Iglesia Santa Lucía)",
+    "address": "Historic Center, Ferreñafe, Lambayeque, Peru",
+    "cost": 0,
+    "description": "Local colonial-era church with characteristic ornamentation — open for visits and photography (donation-based).",
+    "photo_url": "images/places/santa-lucia-church.webp"
+  },
+  {
+    "name": "Ferreñafe Market (Mercado)",
+    "address": "Central area / main streets of Ferreñafe (e.g., Av. Tacna area)",
+    "cost": 0,
+    "description": "Traditional local market where you can taste regional food, buy produce and experience local culture.",
+    "photo_url": "images/places/mercado-ferreñafe.webp"
+  }
+]

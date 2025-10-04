@@ -1,0 +1,29 @@
+@media only screen and (min-width: 64rem) {
+    main {
+        display: block;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+            "photograph view";
+    }
+
+    section button {
+        width: 80%;
+    }
+
+    section img:hover{
+        box-shadow: 0 0 50px var(--primary-color);
+    }
+
+}
