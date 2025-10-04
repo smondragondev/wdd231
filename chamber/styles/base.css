@@ -141,34 +141,37 @@ main {
     overflow-x: hidden;
 }
 
-.alertMessage{
+.alertMessage {
     position: absolute;
-    top: 100px;
-    right: 90px;
+    top: 70px;
+    right: 0px;
     background-color: var(--primary-color);
-    padding: 1rem 10rem;
+    padding: 1rem 1rem;
     color: var(--text2-color);
     border-radius: 10px;
-    font-size: 1.1rem;
-    opacity:  0;
+    font-size: 1rem;
+    opacity: 0;
     transform: translateX(100px);
     animation: fadeOut 8s ease-in-out forwards;
 }
 
-@keyframes fadeOut{
-    0%{
+@keyframes fadeOut {
+    0% {
         opacity: 0;
         transform: translateX(100px) scale(0.8);
     }
-    15%{
+
+    15% {
         opacity: 1;
         transform: translateX(0) scale(1);
     }
-    85%{
+
+    85% {
         opacity: 1;
         transform: translateX(0) scale(1);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translateX(0) scale(1);
     }
@@ -267,13 +270,22 @@ footer {
         border: none;
     }
 
-        #header-list.show p:last-child {
+    #header-list.show p:last-child {
         display: block;
     }
 
     #header-list.show p:nth-last-child(2) {
         display: block;
     }
+
+    .alertMessage {
+        top: 100px;
+        right: 90px;
+        padding: 1rem 10rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+    }
+
 
     .footer-container {
         max-width: 1300px;
