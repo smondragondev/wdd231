@@ -1,0 +1,57 @@
+/* https://coolors.co/064789-427aa1-ebf2fa-679436-a5be00 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* https://coolors.co/78350f-374151-fb923c-84cc16-fff7ed */
+:root {
+    --primary-color: #FB923C;
+    --secondary-color: #84CC16;
+    --background-color: #FFF7ED;
+    --text-color: #374151;
+    --accent1-color: #78350F;
+}
+
+body {
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+/* Header */
+
+header {
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+
+/* main */
+
+main {
+    overflow-x: hidden;
+}
+
