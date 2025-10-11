@@ -1,0 +1,78 @@
+
+main{
+    padding: 0 10px 20px 10px;
+}
+
+ul{
+    padding: 10px 0px;
+    list-style: none;
+}
+
+section{
+    padding: 10px 0px;    
+    margin-bottom: 50px;
+}
+
+section > h2{
+    margin-bottom: 5px;
+}
+ 
+section > ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+section > ul>li>button{
+    border: none;
+    width: 100px;
+    background-color: var(--primary-color);
+    text-align: start;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.selected{
+    background-color: var(--secondary-color);
+}
+
+/* Product list */
+
+#products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    width: 280px;
+    box-shadow: 0 0 10px var(--secondary-color);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#products div{
+    border: 1px solid var(--secondary-color);
+}
+
+#products img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price{
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,64 @@
+@media only screen and (min-width: 38rem) {
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+
+    .hero-text {
+        width: 60%;
+        top: 50px;
+        left: 5%;
+    }
+
+    .hero-buttons {
+        position: absolute;
+        bottom: 50px;
+        right: 5%;
+    }
+
+    article {
+        align-items: center;
+    }
+
+    article p {
+        max-width: 700px;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    #main-section {
+        padding-bottom: 50px;
+        border-bottom: 1px solid var(--accent1-color);
+    }
+
+    #our-juices {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #our-juices div{
+        padding: 20px 20px;
+    }
+
+    #our-juices img:hover {
+        box-shadow: 0 0 50px var(--primary-color);
+    }
+
+    #hero-section {
+        padding-top: 20px;
+    }
+
+    #customer-feedbacks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #customer-feedbacks div {
+        padding: 20px;
+    }
+
+    #customer-feedbacks div:hover {
+        box-shadow: 0 0 50px var(--secondary-color);
+    }
+}

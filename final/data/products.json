@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Classic Orange Juice",
+    "description": "Freshly squeezed orange juice, 100% natural with no added sugar.",
+    "price": 6.0,
+    "category": "juice",
+    "imageUrl": "images/products/classic-orange-juice.webp"
+  },
+  {
+    "name": "Orange & Carrot Juice",
+    "description": "A refreshing and energizing mix of orange and natural carrot.",
+    "price": 7.0,
+    "category": "juice",
+    "imageUrl": "images/products/orange-carrot-juice.webp"
+  },
+  {
+    "name": "Orange & Strawberry Juice",
+    "description": "A sweet combination of orange and fresh strawberries.",
+    "price": 7.5,
+    "imageUrl": "images/products/orange-strawberry-juice.webp",
+    "category": "juice"
+  },
+  {
+    "name": "Orange & Papaya Juice",
+    "description": "A tropical and smooth juice blend perfect for digestion.",
+    "price": 7.0,
+    "imageUrl": "images/products/orange-papaya-juice.webp",
+    "category": "juice"
+  },
+  {
+    "name": "Green Energy Juice",
+    "description": "Orange, spinach, pineapple, and ginger for a healthy energy boost.",
+    "price": 8.0,
+    "category": "juice",
+    "imageUrl": "images/products/green-energy-juice.webp"
+  },
+  {
+    "name": "Double Orange Combo",
+    "description": "2 classic orange juices at a special price.",
+    "price": 10.0,
+    "category": "combo",
+    "imageUrl": "images/products/double-orange-combo.webp"
+  },
+  {
+    "name": "Family Orange Pack",
+    "description": "4 classic orange juices at a reduced price.",
+    "price": 18.0,
+    "category": "combo",
+    "imageUrl": "images/products/family-orange-pack.webp"
+  },
+  {
+    "name": "Fruit Mix Combo",
+    "description": "3 juices of your choice (orange, strawberry, papaya, or green).",
+    "price": 19.0,
+    "category": "combo",
+    "imageUrl": "images/products/fruit-mix-combo.webp"
+  },
+  {
+    "name": "Chicken Sandwich + Juice",
+    "description": "Classic breakfast combo with fresh juice.",
+    "price": 10.0,
+    "category": "combo",
+    "imageUrl": "images/products/chicken-orange-juice.webp"
+  },
+  {
+    "name": "Empanada + Orange Juice",
+    "description": "Freshly baked empanada served with natural orange juice.",
+    "price": 9.0,
+    "category": "combo",
+    "imageUrl": "images/products/empanada-orange-juice.webp"
+  },
+  {
+    "name": "Avocado Sandwich",
+    "description": "Artisan bread with fresh avocado, perfect to pair with juice.",
+    "price": 4.5,
+    "category": "snack",
+    "imageUrl": "images/products/avocado-sandwich.webp"
+  },
+  {
+    "name": "Cheese Sandwich",
+    "description": "Artisan bread filled with local fresh cheese.",
+    "price": 5.0,
+    "category": "snack",
+    "imageUrl": "images/products/cheese-sandwich.webp"
+  },
+  {
+    "name": "Fruit Salad",
+    "description": "A mix of seasonal fresh fruits served chilled.",
+    "price": 8.0,
+    "category": "snack",
+    "imageUrl": "images/products/fruit-salad.webp"
+  },
+  {
+    "name": "Water Bottle 500ml",
+    "description": "Natural mineral water to stay hydrated.",
+    "price": 2.5,
+    "category": "drink",
+    "imageUrl": "images/products/natural-mineral-water.webp"
+  },
+  {
+    "name": "Ginger & Orange Shot",
+    "description": "A small concentrated shot of orange and ginger to boost your defenses.",
+    "price": 4.0,
+    "category": "special",
+    "imageUrl": "images/products/ginger-orange-shot.webp"
+  }
+]

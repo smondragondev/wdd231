@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Romaine",
+        "feedback": "The smoothies are delicious!",
+        "imageUrl": "images/romaine-profile.webp",
+        "rating": 5,
+        "favoriteProduct": "Classic Orange Juice",
+        "date": "2025-10-05"
+    },
+    {
+        "name": "Mike",
+        "feedback": "Great variety of flavors.",
+        "imageUrl": "images/mike-profile.webp",
+        "rating": 5,
+        "favoriteProduct": "Green Energy Juice",
+        "date": "2025-09-28"
+    },
+    {
+        "name": "Laura",
+        "feedback": "High-quality ingredients",
+        "imageUrl": "images/laura-profile.webp",
+        "rating": 4,
+        "favoriteProduct": "Double Orange Combo",
+        "date": "2025-10-01"
+    }
+]
