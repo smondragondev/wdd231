@@ -1,0 +1,28 @@
+main {
+    padding: 0 10px 20px 10px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text3-color);
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 38rem) {
+    main {
+        display: block;
+        max-width: 1300px;
+        margin: 0 auto;
+        min-height: 75vh;
+    }
+
+    #results {
+        margin: 50px auto 200px auto;
+        width: 800px;
+    }
+}

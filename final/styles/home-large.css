@@ -5,6 +5,11 @@
         max-width: 1300px;
     }
 
+    section {
+        padding: 0px 10px;
+        margin-bottom: 50px;
+    }
+
     .hero-text {
         width: 60%;
         top: 50px;
@@ -36,7 +41,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    #our-juices div{
+
+    #our-juices div {
         padding: 20px 20px;
     }
 
@@ -48,7 +54,7 @@
         padding-top: 20px;
     }
 
-    #customer-feedbacks{
+    #customer-feedbacks {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;

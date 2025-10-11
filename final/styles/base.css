@@ -1,5 +1,3 @@
-/* https://coolors.co/064789-427aa1-ebf2fa-679436-a5be00 */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +11,7 @@
     --background-color: #FFF7ED;
     --text-color: #374151;
     --text2-color: black;
+    --text3-color: #341604;
     --accent1-color: #78350F;
 }
 
@@ -82,7 +81,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--text3-color);
     text-align: start;
     padding: 1rem;
 }

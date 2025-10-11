@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 - Sergio Mondragon -Final Project - Osmar's Juicery - Fresh, natural orange juices made from locally sourced Peruvian oranges.">
+    <meta name="author" content="Sergio Mondragon">
+    <meta property="og:title" content="Osmar's Juicery Homepage">
+    <meta property="og:description" content="WDD 231 course homepage. Learn more about Osmar's Juicery, a fresh juice brand specializing in natural orange juices from Peru.">
+    <meta property="og:image" content="https://smondragondev.github.io/wdd231/final/images/social-media-banner.webp">
+    <meta property="og:url" content="https://smondragondev.github.io/wdd231/final/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <title>Osmar’s Juicery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-grid">
+                <div class="header-content">
+                    <img src="images/juicery-logo.webp" alt="Osmar’s Juicery Logo" width="64">
+                    <span>Osmar’s Juicery</span>
+                    <button id="ham-btn" class="hamburger" aria-label="Button to expand the navigation menu."></button>
+                </div>
+                <nav id="nav-bar" class="navigation">
+                    <ul>
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li class="current" ><a href="delivery.html">Delivery</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>        
+    </header>        
+    <main>   
+        <h1>Thank you!</h1>
+        <div id="results"></div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div id="general-info">
+            <h4>Omar's Juicery</h4>
+            <p>Av Victor Muro 770</p>
+            <p>Ferreñafe, Peru</p>
+            <p>omarsjuicery@gmail.com</p>
+            <p>(+51) 999-999-999</p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/smondragondev">
+                <img src="images/github-icon.svg" alt="Github profile" width="48">
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-mondragon/">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn profile" width="48">
+            </a>
+            <a href="https://www.instagram.com/sergiomondragonsilva/">
+                <img src="images/instagram-icon.svg" alt="Instagram profile" width="48">
+            </a>
+        </div>
+        <div class="date-info">
+            <p>WDD231 Final Project</p>
+            <p>Sergio Mondragon</p>
+            <p>
+                &copy;<span id="currentYear"></span>  Omar's Juicery
+            </p>
+            <p id="lastModified"></p>
+        </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

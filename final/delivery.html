@@ -13,18 +13,22 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/delivery.css">
+    <link rel="stylesheet" href="styles/delivery-large.css">
     <title>Osmar’s Juicery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/delivery.js"></script>
 </head>
 <body>
     <header>
+        <main>   
+        <h1>Thank you!</h1>
+        <div id="results"></div>
+    </main>
         <div class="header">
             <div class="header-grid">
                 <div class="header-content">
@@ -34,49 +38,120 @@
                 </div>
                 <nav id="nav-bar" class="navigation">
                     <ul>
-                        <li  class="current"><a href="">Home</a></li>
+                        <li ><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery.html">Delivery</a></li>
+                        <li class="current" ><a href="delivery.html">Delivery</a></li>
                     </ul>
                 </nav>
             </div>            
         </div>        
     </header>
-    <main>   
-        <section id="hero-section">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="images/hero-large.webp" width="1200">
-                <img src="images/hero-small.webp" alt="Chamber of Commerce working together" width="400">
-            </picture>
-            <div class="hero-text">
-                <h2>Are you ready to taste the freshest juices in town?</h2>
-                <h3>Osmar’s Juicery</h3>
-            </div>
-            <div class="hero-buttons">
-                <button>Check our products!</button>
-                <button>Delivery</button>
-            </div>
-        </section>
-        <h1>Home</h1>
-        <section id="main-section">
-            <article>
-                <h2>Our Juices</h2>
-                <p>Discover our premium collection of 100% natural orange juice glasses,
-                     freshly squeezed from locally sourced oranges from Peru. Each glass delivers pure, 
-                     refreshing taste with no artificial additives or preservatives.</p>
-                <div id="our-juices">
+    <main>          
+        <h1>Delivery</h1>
+        <div class="delivery-container">
+            <section class="form-section">
+                <h2>Request Delivery Form</h2>
+                <form action="thankyou.html" method="get">
+                    <p class="help-message">The fields with <span class="required-symbol">*</span> are required to fill.</p>
+                    <label for="first-name">First Name <span class="required-symbol">*</span>
+                        <input type="text" 
+                        name="first-name" id="first-name" 
+                        autocomplete="given-name" required>
+                    </label>
+                    <label for="last-name">Last Name <span class="required-symbol">*</span>
+                        <input type="text" 
+                        name="last-name" id="last-name" 
+                        autocomplete="family-name" required>
+                    </label>
+                    <label for="mobile-phone-number">Mobile Phone <span class="required-symbol">*</span>
+                        <input type="tel" name="mobile-phone-number"
+                        id="mobile-phone-number" autocomplete="tel" required>
+                    </label>
+                    <label for="order-detail">
+                        Order details <span class="required-symbol">*</span>
+                        <textarea name="order-detail" id="order-detail" cols="40" rows="10" required></textarea>
+                    </label>
+                    <div class="payment-methods-input">
+                        <p>Payment Methods</p>
+                        <label for="cash">
+                            <input type="radio" name="payment-method" id="cash" value="cash">
+                            Cash
+                        </label>
+                        <label for="yape-plin">
+                            <input type="radio" name="payment-method" id="yape-plin" value="yape-plin">
+                            Yape / Plin
+                        </label>
+                        <label for="credit-card">
+                            <input type="radio" name="payment-method" id="credit-card" value="credit-card">
+                            Credit card
+                        </label>
+                        <label for="debit-card">
+                            <input type="radio" name="payment-method" id="debit-card" value="debit-card">
+                            Debit card
+                        </label>
+                    </div>
+                    <label for="address">
+                        Place to deliver <span class="required-symbol">*</span>
+                        <textarea name="address" id="address" cols="40" rows="10" required></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Request delivery">
+                </form>    
+            </section>        
+            <section class="payment-methods-section">
+                <h2>
+                    Payment Methods
+                </h2>
+                <div class="card cash">
+                    <p>Cash</p>
+                    <button>See details</button>
                 </div>
-            </article>            
-        </section>
-        <section>
-            <article>
-                <h2>Customer Feedback</h2>
-                <p>Our customers love the fresh, natural taste of our orange juices. Join hundreds of satisfied customers who choose Osmar's Juicery daily.</p>
-                <div id="customer-feedbacks">
-    
+                <div class="card yape-plin">
+                    <p>Yape / Plin</p>
+                    <button>See details</button>
                 </div>
-            </article>
-        </section>
+                <div class="card credit-card">
+                    <p>Credit card</p>
+                    <button>See details</button>
+                </div>
+                <div class="card debit-card">
+                    <p>Debit card</p>
+                    <button>See details</button>
+                </div>
+                <dialog id="cash-dialog">
+                    <h3>Cash</h3>
+                    <div class="description">
+                        <p>Pay directly with physical money at the point of sale.</p>
+                    </div>
+                    <p>Please let us know the amount you'll pay with so we can have your change ready when you pick up your order.</p>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="yape-plin-dialog">
+                    <h3>Yape / Plin</h3>
+                    <div class="description">
+                        <p>Pay easily using your Yape or Plin app with our number or QR code</p>
+                    </div>
+                    <p>After sending your payment, please share a screenshot or let us know once it's done so we can confirm your order quickly.</p>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="credit-card-dialog">
+                    <h3>Credit Card</h3>
+                    <div class="description">
+                        <p>Pay securely using your credit card at the counter or online.</p>
+                    </div>
+                    <p>Make sure your card is active and ready for online or contactless payments to complete your purchase smoothly.</p>
+                    <button>Close</button>
+                </dialog>
+                <dialog id="debit-card-dialog">
+                    <h3>Debit Card</h3>
+                    <div class="description">
+                        <p>Pay directly from your bank account using your debit card.</p>
+                    </div>
+                    <p>Please check that your card has sufficient balance and is available for in-person or online payments.</p>
+                    <button>Close</button>
+                </dialog>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
