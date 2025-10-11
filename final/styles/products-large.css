@@ -17,6 +17,10 @@
         margin-bottom: 20px;
     }
 
+    #filter button{
+        cursor: pointer;
+    }
+
     #products {
         display: flex;
         flex-direction: row;
