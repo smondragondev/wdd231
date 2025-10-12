@@ -1,4 +1,4 @@
-import { getCustomers,getProducts } from "./files.mjs";
+import { getCustomers, getProducts } from "./files.mjs";
 
 
 const juicesContainer = document.querySelector("#our-juices");
