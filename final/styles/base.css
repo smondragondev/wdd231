@@ -158,6 +158,10 @@ footer {
     font-weight: 900;
 }
 
+.date-info > a {
+    color: var(--text3-color);
+}
+
 .social-media {
     display: flex;
     justify-content: center;
